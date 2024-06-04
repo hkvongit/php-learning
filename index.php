@@ -9,31 +9,37 @@
 
 <body>
   <?php
-  $string_variable = "Some string";
-  $number_variable = 10;
-  $float_variable = 10.002;
-  $bool_variable = true;
-  $null_variable = NULL;
-
-  echo "My brothers age is $number_variable <br/>";
-
-  // Knowing the data type of a variable
-  echo var_dump($string_variable);
-
-  echo "<br><br>";
 
 
-  // Setting constants
-  echo "CONSTANTS";
-  define("PI", 3.14);
-  echo PI;
+  $x = 10;
+  $y = 20;
+
+  echo $x + $y;
 
   echo "<br>";
 
-  define("PI", 4);
-  echo PI; // You can see value is still 3.14, we cannot change the value of a constant.
-  
+  echo $x - $y;
 
+  echo "<br>";
+
+  echo $x * $y;
+
+  echo "<br>";
+
+  echo $x / $y;
+
+  echo "<br>";
+
+  echo $x % $y;
+
+  echo "<br>";
+  echo ++$x;
+
+  echo "<br>";
+  echo --$y;
+
+  echo "<br> Raise to ";
+  echo $x ** 2; // x raise to 2 (x^2)
   ?>
 </body>
 
