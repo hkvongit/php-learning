@@ -10,36 +10,27 @@
 <body>
   <?php
 
+  /*
+  This is simple
+  Read https://www.w3schools.com/php/php_operators.asp
+  for more info.
+  */
 
-  $x = 10;
-  $y = 20;
+  $a = 10;
+  $b = "10";
+  $c = 11;
 
-  echo $x + $y;
+  echo "<br><br> equals <br>";
+  echo var_dump($a == $b);
 
-  echo "<br>";
+  echo "<br><br> Identical - equals with same data type <br>";
+  echo var_dump($a === $b);
 
-  echo $x - $y;
+  echo "<br><br> Not equal to <br>";
+  echo var_dump($a != $c);
 
-  echo "<br>";
 
-  echo $x * $y;
 
-  echo "<br>";
-
-  echo $x / $y;
-
-  echo "<br>";
-
-  echo $x % $y;
-
-  echo "<br>";
-  echo ++$x;
-
-  echo "<br>";
-  echo --$y;
-
-  echo "<br> Raise to ";
-  echo $x ** 2; // x raise to 2 (x^2)
   ?>
 </body>
 
