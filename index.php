@@ -8,31 +8,22 @@
 </head>
 
 <body>
-  <h1>GET FORM</h1>
-  <form action="index.php" method="GET">
-    <label for="name"> Enter your name</label><br>
-    <input name="name" type="text" /><br>
-    <input type="submit" />
-  </form>
-  <?php
-  // When you submit a GET method you can see a change in the url query params in the browser
-  $name = $_GET["name"];
-  echo "Your name is $name <br>";
-  ?>
-
-  <br>
-  <br>
-  <h1>POST FORM</h1>
-  <form action="index.php" method="POST">
-    <label for="age"> Enter your age</label><br>
-    <input name="age" type="number" /><br>
-    <input type="submit" />
-  </form>
-
   <?php
 
-  $age = $_POST["age"];
-  echo "Your age is $age";
+  $a = 4;
+  $b = $a > 5 ? "a is greater than 5" : "a is less than or equal to 5";
+  echo $b;
+
+  echo "<br>";
+  $k = 100;
+  if ($k > 100) {
+    echo "k is greater than 100";
+  } else if ($k = 100) {
+    echo "k is 100";
+  } else {
+    echo "k is less than 100";
+  }
+
 
   ?>
 </body>
