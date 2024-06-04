@@ -9,16 +9,30 @@
 
 <body>
   <?php
+  $string_variable = "Some string";
+  $number_variable = 10;
+  $float_variable = 10.002;
+  $bool_variable = true;
+  $null_variable = NULL;
 
-   // This is PHP learning course.
-  /**
-   * This is a multi line comment
-   * 2nd line of command.
-   */
-  echo ("Hello world");
-  echo "<br/>";
-  echo "<h1>Learn PHP</h1>"
+  echo "My brothers age is $number_variable <br/>";
 
+  // Knowing the data type of a variable
+  echo var_dump($string_variable);
+
+  echo "<br><br>";
+
+
+  // Setting constants
+  echo "CONSTANTS";
+  define("PI", 3.14);
+  echo PI;
+
+  echo "<br>";
+
+  define("PI", 4);
+  echo PI; // You can see value is still 3.14, we cannot change the value of a constant.
+  
 
   ?>
 </body>
