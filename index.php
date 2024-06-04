@@ -8,28 +8,42 @@
 </head>
 
 <body>
+
   <?php
 
   /*
   This is simple
   Read https://www.w3schools.com/php/php_operators.asp
   for more info.
+
+and 	And 	$x and $y 	True if both $x and $y are true 	
+or 	Or 	$x or $y 	True if either $x or $y is true 	
+xor 	Xor 	$x xor $y 	True if either $x or $y is true, but not both 	
+&& 	And 	$x && $y 	True if both $x and $y are true 	
+|| 	Or 	$x || $y 	True if either $x or $y is true 	
+! 	Not 	!$x 	True if $x is not true
   */
 
   $a = 10;
-  $b = "10";
-  $c = 11;
+  $b = 50;
 
-  echo "<br><br> equals <br>";
-  echo var_dump($a == $b);
+  echo "<br> <br> AND operator <br>";
+  echo var_dump($a == 10 and $b == 50);
+  echo "<br>";
+  echo var_dump($a == 10 && $b == 50);
 
-  echo "<br><br> Identical - equals with same data type <br>";
-  echo var_dump($a === $b);
+  echo "<br> <br> OR operator <br>";
+  echo var_dump($a == 5 or $b == 50);
+  echo "<br>";
+  echo var_dump($a == 5 || $b == 50);
 
-  echo "<br><br> Not equal to <br>";
-  echo var_dump($a != $c);
+  echo "<br> <br> XOR (Neither true) operator <br>";
+  echo var_dump($a == 5 xor $b == 5);
+  echo "<br>";
+  echo var_dump($a == 10 xor $b == 5);
 
-
+  echo "<br> <br> Not operator <br>";
+  echo var_dump($a != 5);
 
   ?>
 </body>
