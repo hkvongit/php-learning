@@ -8,42 +8,31 @@
 </head>
 
 <body>
+  <h1>GET FORM</h1>
+  <form action="index.php" method="GET">
+    <label for="name"> Enter your name</label><br>
+    <input name="name" type="text" /><br>
+    <input type="submit" />
+  </form>
+  <?php
+  // When you submit a GET method you can see a change in the url query params in the browser
+  $name = $_GET["name"];
+  echo "Your name is $name <br>";
+  ?>
+
+  <br>
+  <br>
+  <h1>POST FORM</h1>
+  <form action="index.php" method="POST">
+    <label for="age"> Enter your age</label><br>
+    <input name="age" type="number" /><br>
+    <input type="submit" />
+  </form>
 
   <?php
 
-  /*
-  This is simple
-  Read https://www.w3schools.com/php/php_operators.asp
-  for more info.
-
-and 	And 	$x and $y 	True if both $x and $y are true 	
-or 	Or 	$x or $y 	True if either $x or $y is true 	
-xor 	Xor 	$x xor $y 	True if either $x or $y is true, but not both 	
-&& 	And 	$x && $y 	True if both $x and $y are true 	
-|| 	Or 	$x || $y 	True if either $x or $y is true 	
-! 	Not 	!$x 	True if $x is not true
-  */
-
-  $a = 10;
-  $b = 50;
-
-  echo "<br> <br> AND operator <br>";
-  echo var_dump($a == 10 and $b == 50);
-  echo "<br>";
-  echo var_dump($a == 10 && $b == 50);
-
-  echo "<br> <br> OR operator <br>";
-  echo var_dump($a == 5 or $b == 50);
-  echo "<br>";
-  echo var_dump($a == 5 || $b == 50);
-
-  echo "<br> <br> XOR (Neither true) operator <br>";
-  echo var_dump($a == 5 xor $b == 5);
-  echo "<br>";
-  echo var_dump($a == 10 xor $b == 5);
-
-  echo "<br> <br> Not operator <br>";
-  echo var_dump($a != 5);
+  $age = $_POST["age"];
+  echo "Your age is $age";
 
   ?>
 </body>
